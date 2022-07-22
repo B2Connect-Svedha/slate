@@ -368,34 +368,54 @@ axios.get("/orders").then((res) => {
 ```json
 
 {
-  "success": true,
-  "code": 0,
-  "message": "string",
-  "body": {
-    "total": 0,
-    "items": [
-      {
-        "orderId": 0,
-        "salesOrderId": 0,
-        "salesOrderNo": "string",
-        "invoiceId": 0,
-        "invoiceNo": "string",
-        "source": "APP",
-        "total": 0,
-        "status": "string",
-        "time": 0,
-        "userZoneState": "string",
-        "userZone": "string",
-        "userAddress": "string",
-        "userPhone": "string",
-        "salesAgentCode": "string",
-        "paymentMethod": "string",
-        "currency": "string",
-        "appPlatform": "string",
-        "appVersion": "string"
-      }
-    ]
-  }
+    "success": true,
+    "code": 0,
+    "message": "",
+    "body": {
+        "total": 1168,
+        "items": [
+            {
+                "orderId": 1169,
+                "salesOrderId": 8909564874768462005,
+                "salesOrderNo": "SO-00000",
+                "invoiceId": null,
+                "invoiceNo": null,
+                "source": "APP",
+                "total": 750.00,
+                "status": "created",
+                "time": 1657189273000,
+                "userZoneState": "ABU_DHABI",
+                "userZone": "B2",
+                "userAddress": "W HOTEL",
+                "userPhone": "971590643092",
+                "salesAgentCode": "1063",
+                "paymentMethod": "Cash: B2Pay Now",
+                "currency": "AED",
+                "appPlatform": "",
+                "appVersion": ""
+            },
+            {
+                "orderId": 1140,
+                "salesOrderId": 908956200011117001,
+                "salesOrderNo": "SO-00000",
+                "invoiceId": null,
+                "invoiceNo": null,
+                "source": "APP",
+                "total": 920.00,
+                "status": "created",
+                "time": 1654692018000,
+                "userZoneState": "DUBAI",
+                "userZone": "AL RAHABA",
+                "userAddress": "gs, sjs, 4747",
+                "userPhone": "971590120006",
+                "salesAgentCode": "",
+                "paymentMethod": "Cash: B2Pay Now",
+                "currency": "AED",
+                "appPlatform": "",
+                "appVersion": ""
+            }
+        ]
+    }
 }
 
 ```

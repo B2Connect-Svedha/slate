@@ -44,10 +44,38 @@ axios.get("/announcement/").then((res) => {
 ```json
 
 {
-  "success": true,
-  "code": 0,
-  "message": "string",
-  "body": {}
+    "success": true,
+    "code": 0,
+    "message": "",
+    "body": {
+        "total": 100,
+        "announcements": [
+            {
+                "id": 18,
+                "title": "adawd",
+                "category": "Maintenance & Support",
+                "description": "adad",
+                "image": "683a41df-85ed-430a-a81c-286cf3196ba2.png",
+                "created": 1650853737.002060000,
+                "start": null,
+                "expiry": 1652889600.000000000,
+                "status": "ACTIVE",
+                "siteId": null
+            },
+            {
+                "id": 109,
+                "title": "asdasdasd",
+                "category": "Health & Safety",
+                "description": "asdasdasd",
+                "image": "ad0ce186-df68-4e53-9292-db0a200aa911.gif",
+                "created": 1655364055.906176000,
+                "start": null,
+                "expiry": 1643556.055000000,
+                "status": "INACTIVE",
+                "siteId": 36
+            }
+        ]
+    }
 }
 
 ```
@@ -60,23 +88,7 @@ axios.get("/announcement/").then((res) => {
   "success": true,
   "code": 0,
   "message": "string",
-  "body": {
-    "total": 0,
-    "announcements": [
-      {
-        "id": 0,
-        "title": "string",
-        "category": "string",
-        "description": "string",
-        "image": "string",
-        "created": "2022-07-20T08:42:57.661Z",
-        "start": "2022-07-20T08:42:57.661Z",
-        "expiry": "2022-07-20T08:42:57.661Z",
-        "status": "ACTIVE",
-        "siteId": 0
-      }
-    ]
-  }
+  "body": {}
 }
 
 ```

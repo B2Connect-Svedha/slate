@@ -364,52 +364,35 @@ axios.get("/notification/stats").then((res) => {
 ```json
 
 {
-  "success": true,
-  "code": 0,
-  "message": "string",
-  "body": {
-    "totalSMS": 0,
-    "totalSuccessSMS": 0,
-    "totalFailureSMS": 0,
-    "totalPush": 0,
-    "totalSuccessPush": 0,
-    "totalFailurePush": 0,
-    "totalAnnouncement": 0,
-    "totalActiveAnnouncement": 0,
-    "totalInactiveAnnouncement": 0,
-    "totalSurvey": 0,
-    "totalActiveSurvey": 0,
-    "totalInactiveSurvey": 0,
-    "recentNotifications": [
-      {
-        "id": 0,
-        "name": "string",
-        "totalCount": 0,
-        "channels": [
-          "IN_APP"
-        ],
-        "successCount": 0,
-        "failedCount": 0,
-        "date": "string",
-        "owner": "string",
-        "parentId": 0,
-        "childIds": [
-          0
-        ]
-      }
-    ]
-  }
+    "success": true,
+    "code": 0,
+    "message": "Successfully retrieved stats for site id null",
+    "body": {
+        "totalSMS": 0,
+        "totalSuccessSMS": 0,
+        "totalFailureSMS": 0,
+        "totalPush": 0,
+        "totalSuccessPush": 0,
+        "totalFailurePush": 0,
+        "totalAnnouncement": 110,
+        "totalActiveAnnouncement": 10,
+        "totalInactiveAnnouncement": 100,
+        "totalSurvey": 1,
+        "totalActiveSurvey": 1,
+        "totalInactiveSurvey": 0,
+        "recentNotifications": []
+    }
 }
 
 ```
 
-Gives all the statistics for the notification
+Gives all the statistics of the notification
 
 ### Parameters
 
 Name | Description
 --------- | ------- 
-eventId ($int64) | user phone number
+eventId ($int64) | event id
 
 ### Response
 
@@ -466,13 +449,13 @@ axios.get("/notification/menu").then((res) => {
 ```json
 
 {
-  "dashboard": true,
-  "notifications": true,
-  "surveys": true,
-  "announcements": true,
-  "reports": true,
-  "productSales": true,
-  "support": true
+    "dashboard": false,
+    "notifications": false,
+    "surveys": false,
+    "announcements": false,
+    "reports": false,
+    "productSales": true,
+    "support": true
 }
 ```
 
@@ -565,10 +548,7 @@ per_page (integer ($int32)) | Number of records to return in one request (Defaul
 ### Response
 
 <aside class="success">
-Status Code 200 : Menu access found
+Status Code 200 : OK
 </aside>
 
-<aside class="warning">
-Status Code 404 : No user matches given parameters
-</aside>
 
