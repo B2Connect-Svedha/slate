@@ -6,7 +6,9 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
 
 The Kittn API uses the following error codes:
 
+## does this work
 
+# maybe ir does?
 Error Code | Meaning
 ---------- | -------
 400 | Bad Request -- Your request is invalid.
