@@ -43,13 +43,13 @@ axios.get("/survey/").then((res) => {
 ```json
 
 {
-  "id": 0,
-  "title": "string",
-  "category": "string",
-  "surveyLink": "string",
+  "id": 27651,
+  "title": "Eid Mubarak",
+  "category": "event",
+  "surveyLink": "link",
   "created": "2022-07-20T08:07:26.466Z",
   "expiry": "2022-07-20T08:07:26.466Z",
-  "status": "ACTIVE",
+  "status": "INACTIVE",
   "siteId": 0
 }
 

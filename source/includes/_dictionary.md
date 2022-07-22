@@ -30,14 +30,23 @@ axios.get("/dictionaries/order-statuses").then((res) => {
 ```json
 
 {
-  "success": true,
-  "code": 0,
-  "message": "string",
-  "body": {
-    "statuses": [
-      "string"
-    ]
-  }
+    "success": true,
+    "code": 0,
+    "message": "",
+    "body": {
+        "statuses": [
+            "initiated",
+            "created",
+            "approved",
+            "rejected",
+            "pending payment",
+            "ready for delivery",
+            "delivered",
+            "delivered (await next payment)",
+            "completed",
+            "cancelled (refund claimed)"
+        ]
+    }
 }
 
 ```
@@ -84,14 +93,16 @@ axios.get("/dictionaries/locations").then((res) => {
 ```json
 
 {
-  "success": true,
-  "code": 0,
-  "message": "string",
-  "body": {
-    "locations": [
-      "string"
-    ]
-  }
+    "success": true,
+    "code": 0,
+    "message": "",
+    "body": {
+        "locations": [
+            "ADMG",
+            "ALDAR",
+            "Progressive_WiFi"
+        ]
+    }
 }
 
 ```
@@ -139,12 +150,14 @@ axios.get("/dictionaries/job-roles").then((res) => {
 ```json
 
 {
-  "success": true,
-  "code": 0,
-  "message": "string",
-  "body": [
-    "string"
-  ]
+    "success": true,
+    "code": 0,
+    "message": "",
+    "body": [
+        "ACCOUNTANTS PAYABLE",
+        "Accounts Payable Supervisor",
+        "W/O Agent"
+    ]
 }
 
 ```
@@ -192,12 +205,15 @@ axios.get("/dictionaries/departments").then((res) => {
 ```json
 
 {
-  "success": true,
-  "code": 0,
-  "message": "string",
-  "body": [
-    "string"
-  ]
+    "success": true,
+    "code": 0,
+    "message": "",
+    "body": [
+        "Accommodation in charge",
+        "ACCOUNTS",
+        "Style",
+        "Welcome Office"
+    ]
 }
 
 ```
@@ -246,34 +262,45 @@ axios.get("/dictionaries/chart-count").then((res) => {
 ```json
 
 {
-  "success": true,
-  "code": 0,
-  "message": "string",
-  "body": {
-    "department": [
-      {
-        "fieldName": "string",
-        "fieldCount": 0
-      }
-    ],
-    "job_role": [
-      {
-        "fieldName": "string",
-        "fieldCount": 0
-      }
-    ],
-    "nationality": [
-      {
-        "fieldName": "string",
-        "fieldCount": 0
-      }
-    ]
-  }
+    "success": true,
+    "code": 0,
+    "message": "",
+    "body": {
+        "department": [
+            {
+                "fieldName": "F & B Service",
+                "fieldCount": 130
+            },
+            {
+                "fieldName": "Housekeeping",
+                "fieldCount": 120
+            }
+        ],
+        "job_role": [
+            {
+                "fieldName": "Housekeeping Attendant",
+                "fieldCount": 50
+            },
+            {
+                "fieldName": "Waiter/Waitress",
+                "fieldCount": 30
+            }
+        ],
+        "nationality": [
+            {
+                "fieldName": "INDIA",
+                "fieldCount": 12345
+            {
+                "fieldName": "PAKISTAN",
+                "fieldCount": 10005
+            }
+        ]
+    }
 }
 
 ```
 
-Retrieves the chart count
+Retrieves the chart count details for departments, job roles and nationalities
 
 ### Parameters
 
